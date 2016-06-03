@@ -1,0 +1,423 @@
+body 
+{
+  background-image: url('../img/Bg.jpg');
+  background-attachment:fixed;/*maitaining his curent pozition*/
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.inner-container
+{
+	width: 400px;
+	height: 400px;
+	/*background-color: red;*/
+	position: absolute;
+	top:calc(50vh - 150px);
+  left:calc(50vw - 200px);
+  overflow:hidden;
+}
+
+.box
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color:#fff;
+    background:rgba(0,0,0,0.6);
+    padding:30px 0;
+}
+
+.box h1
+{
+	text-align: center;
+	margin: 30px 0;
+	font-size: 30px;
+}
+
+.box .input
+{
+	position: relative;
+	/*width:300px;*/
+	width: 90%;
+ 	margin:15px auto;
+ 	/*background:rgba(0,0,0,0.3);*/
+/* 	color:#fff;
+  	border:0;*/
+}
+
+.box .input input
+{
+	width: 100%;
+  	padding: 10px 5px 10px 40px;
+	border-color: rgba(0,0,0,0);
+  	display: block;
+  	/*border: 1px solid #EDEDED;*/
+  	/*border-radius: 4px;*/
+  	/*transition: 0.2s ease-out;*/
+  	background:rgba(0,0,0,0.3);
+  	color:#fff
+  	border:0;
+}
+
+.box .input span 
+{
+  position: absolute;
+  display: block;
+  color: #d4d4d4;
+  left: 10px;
+  top: 8px;
+  font-size: 20px;
+}
+
+.box button 
+{
+	background:#1026C1;
+  	border:0;
+  	color:#fff;
+  	padding:10px;
+  	font-size:20px;
+  	width:90%;
+  	margin:20px auto;
+  	display:block;
+  	cursor:pointer;
+}
+.box .check
+{
+	width: 90%;
+	margin:20px auto;
+	color:#C5C9C6;
+}
+
+.box button:active
+{
+  background:#0784FF;
+}
+
+/* text recolor */
+/*h1, p, a */
+/*{*/
+  /*color: #4DC9C9 !important;*/
+/*}*/
+
+/* button recolor */
+/*
+.nav-pills > li.active > a, .btn-primary {
+  background-color: #6C6C6C !important;
+  // feeling like it's a rounded corners kind of day
+  border-color: #6C6C6C !important;
+  border-radius: 25px;
+}*/
+
+/*Images*/
+.cont-container
+{
+  width: 1210px;
+  height: auto;
+  position:absolute;
+  /*top:calc(50vh - 300px);*/
+  left:calc(50vw - 615px);
+  background:rgba(0,0,0,0.6);
+}
+
+.cont-img-container{
+    height: auto;
+    margin-left: 20px;
+    /*position: absolute;*/
+}
+
+.cont-img-box{
+    float: left;
+    margin: 10px 10px;
+    /*display: inline-block;*/
+}
+.cont-img-box img{
+    width: 270px;
+    height: 270px;
+}
+
+.cont-upload-img{
+    margin: 15px 0 15px 30px;
+    height: auto;
+    width: auto;
+
+}
+
+form input.ng-invalid:not(.ng-pristine)
+{
+    box-shadow: 0 0 13px rgba(255, 133, 0, 0.9);
+}
+
+.error-message
+{
+    padding: 12px;
+    background-color: rgba(255, 133, 0, 0.1);
+    font-weight: bold;
+}
+
+/**********************TOPMENUPAGE*******************************/
+.topmenu
+{
+  width:100%;
+  height:40px;
+  border-top:1px solid rgba(0,0,0,0.3);
+  border-bottom:1px solid rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.3);
+  text-decoration:none;
+  text-align:center;
+  font-size:13px;
+  font-weight:700;
+}
+
+.topmenu ul
+{
+  list-style:none;
+  width:100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.topmenu ul li a
+{
+  float:left;
+  line-height:30px;
+  height:100%;
+  list-style-type:none;
+  margin:0;
+  overflow:hidden;
+  width: 33.33%;
+  cursor: pointer;
+}
+
+.topmenu li:hover
+{
+  background-color: white;
+}
+
+/* topcontainer */
+.topcontainer
+{
+  width: 100%;
+}
+
+/*top box */
+.topbox
+{
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:rgba(0,0,0,0.3);
+  margin: 100px 250px 100px 250px;
+  height: auto;
+  width: auto;
+  border-radius: 3px;
+  color:#fff;
+}
+
+/* table design */
+
+.toptablecontainer
+{
+  position: relative;
+}
+
+.toptable
+{
+  width: 98%;
+  margin: 10px 10px 25px 10px;
+}
+
+.toptable th, td 
+{
+  border-bottom: 1px solid #fff;
+  height: 10px;
+}
+
+.toptable-column1-header
+{
+   text-align: center;
+   width: 20%;
+}
+
+.toptable-column2-header
+{
+   text-align: center;
+   width: 10%;
+}
+
+.toptable-column3-header
+{
+   text-align: center;
+   width: 30%;
+}
+
+.toptable-column4-header
+{
+   text-align: center;
+   width: 30%;
+}
+
+.toptable-column1-td
+{
+  text-align: center;
+  padding: 1em;
+  width: 20%;
+}
+
+.toptable-column2-td
+{
+  text-align: center;
+  padding: 1em;
+  width: 10%;
+}
+
+.toptable-column3-td
+{
+  text-align: center;
+  padding: 1em;
+  width: 30%;
+}
+.toptable-column4-td
+{
+  text-align: center;
+  padding: 1em;
+  width: 30%;
+}
+/*===================== Nav Bar===========================*/
+
+
+#div2{
+  background-image: linear-gradient(to bottom,#ff9912 0,#ff8c00 100%);
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+#nav_wrapper{
+    /*margin-left: 30%;*/
+    /*margin-right:50%;*/
+    position: absolute;
+    display: inline-block;
+    float: left;
+    height:40px
+}
+
+#nav_wrapper ul{
+  /*position:relative;*/
+  /*margin-right:40px;*/
+  padding:0 25px;
+  margin-bottom: 0;
+}
+
+#nav_wrapper ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+
+#nav_wrapper ul li a{
+  padding: 2px 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color:white;
+  display:block;
+  /*cursor: pointer;*/
+}
+
+#nav_wrapper ul li:hover{
+  background-color: rgba(221,114,1,.5);
+  transition: all 0.10s;
+    cursor: pointer;
+}
+#nav_wrapper ul li:hover ul{
+  display: block;
+}
+
+#nav_wrapper ul ul{
+  display: none;
+  /*width:100px;*/
+  position:absolute;
+  padding: 0;
+}
+
+#nav_wrapper ul li li{
+  background: darkgreen;
+  display: block;
+  width: 122px;
+}
+
+#nav_wrapper ul li li a{
+  padding: 5px;
+  font-size: 15px;
+}
+
+#nav_wrapper ul li li:hover{
+  background: blue;
+  transition: all 0.40s;
+}
+
+
+
+.logo{
+    float: left;
+    line-height: 30px;
+    display:block;
+    margin-left: 20px;
+    margin-right: 23%;
+    cursor: pointer;
+}
+.logo-img{
+    width: 120px;
+    height: 40px;
+}
+
+.profile{
+    float:right;
+    width:auto;
+    height: 40px;
+    margin-right: 30px;
+    /*position: absolute;*/
+
+}
+
+.img-container{
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 3px;
+}
+
+.profile img{
+    width: 30px;
+    height: 30px;
+
+}
+.profile a{
+    display: inline-block;
+}
+
+.profile a span {
+    /*float:left;*/
+    /*position: absolute;*/
+    padding: 6px 5px 14px 10px;
+    display: inline-block;
+    color:white;
+    font-size: 15px;
+}
+
+.logout{
+    /*width: 70px;*/
+    /*height: 42px;*/
+    display: inline-block;
+}
+
+/*.columns {*/
+    /*column-count: 4;*/
+    /*display: inline-block;*/
+/*}*/
+
+
+
+

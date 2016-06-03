@@ -1,0 +1,43 @@
+<div class="inner-container">
+  <div class="box" >
+
+    <div>
+    
+      <!-- <div style="float: left;" ng-if="isLoggedIn == true">
+        <a href="userInfo.link" target="_blank"><img ng-src="{{picture}}"></a>
+      </div> -->
+
+      <h1>{{welcomeMsg}}</h1> 
+    </div>
+
+    <div ng-if="isLoggedIn == false">
+      <a href="/facebooklogin/facebook"><button type="button" class="btn btn-default" ng-click="login()">Login</button></a>
+    </div>
+
+    <div ng-if="isLoggedIn == true">
+      <button type="button" class="btn btn-default" ng-click="PlayPacman()">Play Pacman</button>
+      <button type="button" class="btn btn-default" ng-click="logout()">Logout</button>
+    </div>
+
+    <div ng-if="isLoggedIn == true">
+      <h4>Details</h4>
+      <ul>
+        <li> ID: {{userInfo.id}} </li>
+        <li> FirstName {{userInfo.first_name}} </li>
+        <li> LastName {{userInfo.last_name}}</li>
+        <li> Email {{userInfo.email}}</li>
+      </ul>
+    </div>
+
+    <!--
+    <h4> Permisions</h4>
+    <ul>
+      <li> placeholder </li>
+      <li> placeholder </li>
+      <li> placeholder </li>
+      <li>  </li>
+    </ul>
+    -->
+
+  </div>
+<div>

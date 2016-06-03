@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="../../../assets/css/style.css"> -->
+  	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js'>
+ 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+ 	<!-- TODO: add bootstrap from local folder -->
+	<title>Pac-Man</title>
+
+</head>
+<body>
+
+
+
+<div ng-view>
+
+</div>
+
+<script src="assets/js/angular/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.min.js"></script>
+<script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+<script type='text/javascript' src='assets/js/ngInfiniteScroll-1.0.0/build/ng-infinite-scroll.min.js'></script>
+<script src="assets/js/ng-facebook/ngFacebook.js"></script>
+<script src="assets/js/angular-material/angular-material.js"></script>
+<script src="assets/js/angular-animate/angular-animate.js"></script>
+<script src="assets/js/angular-aria/angular-aria.js"></script>
+<script src="assets/js/ng-file-upload-bower-10.1.8/ng-file-upload-shim.min.js"></script>
+<script src="assets/js/ng-file-upload-bower-10.1.8/ng-file-upload.min.js"></script>
+
+<script src="pages/main.js"></script>
+
+<script src="pages/loginSP/controllers/loginController.js"></script>
+<script src="pages/loginSP/loginService.js"></script>
+
+<script src="pages/loginRegisterMP/controllers/loginRegisterControllerMP.js"></script>
+<script src="pages/loginRegisterMP/loginRegisterServiceMP.js"></script>
+
+<script src="pages/top/controllers/topController.js"></script>
+<script src="pages/top/topService.js"></script>
+
+
+<!-- SP Login Scripts -->
+<script src="pages/loginSP/controllers/loginController.js"></script>
+<script src="pages/loginSP/loginService.js"></script>
+
+<!-- SP Register Scripts -->
+<script src="pages/registerSP/registerServiceSP.js"></script>
+<script src="pages/registerSP/controllers/registerControllerSP.js"></script>
+
+<!-- Home Controller -->
+<script src="pages/home/homeController.js"></script>
+
+<!-- Images Scripts -->
+<script src="pages/uploadedImages/controllers/imagesControler.js"></script>
+<script src="pages/uploadedImages/imagesServices.js"></script>
+
+
+
+</body>
+</html>

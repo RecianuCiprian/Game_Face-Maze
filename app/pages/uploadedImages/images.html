@@ -1,0 +1,65 @@
+	<div id="div2">
+
+		<div class="logo"><img class="logo-img" src="../../assets/img/pacman1.png"><!--logoul--></div>
+
+		<div id="nav_wrapper">
+
+			<ul>
+
+				<li><a href="#/user/game">Game</a> </li>
+				<li><a href="#/user/top">Top Scores</a> </li>
+				<li><a href="#/user/images">Images</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="profile">
+
+			<a href="#">
+				<div class="img-container">
+					<img src="../../assets/img/pacman1.png" >
+				</div>
+				<span>Recianu Ciprian</span>
+			</a>
+
+			<a href="/user/logout">
+				<div class="logout">
+					<span><i class="fa fa-sign-out" aria-hidden="true">Logout</i></span>
+				</div>
+			</a>
+
+		</div>
+	</div>
+
+	<div class="cont-container">
+
+		<div class="cont-upload-img">
+			<p>Please chose an image</p>
+			<form name="up">
+				<input type="file"
+					   ngf-select
+					   ng-model="file"
+					   name="file"
+					   ngf-pattern="'image/*'"
+					   accept="image/*"
+					   ngf-max-size="20MB" />
+
+				<i ng-show="up.file.$error.required">*required</i><br>
+				<i ng-show="up.file.$error.maxSize">File too large
+					{{file.size / 1000000|number:1}}MB: max 20M</i>
+				<button type="submit" ng-click="submit()">submit</button>
+				<p>{{progress}}</p>
+			</form>
+
+		</div>
+
+		<!--<img id="img" src="" />-->
+s
+		<div class="cont-img-container">
+			<div ng-repeat="image in images"  class="cont-img-box">
+				<img  src='data:image/png;base64,{{image}}' />
+			</div>
+		</div>
+
+	</div>

@@ -1,0 +1,35 @@
+<div id="div2">
+
+    <div class="logo"><img class="logo-img" src="../../assets/img/pacman1.png"><!--logoul--></div>
+
+    <div id="nav_wrapper">
+
+        <ul>
+
+            <li><a ui-sref="game">Game</a> </li>
+            <li><a ui-sref="topScore">Top Scores</a> </li>
+            <li><a ui-sref="images">Images</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="profile">
+
+        <a href="#">
+            <div class="img-container">
+                <img src="../../assets/img/pacman1.png" >
+            </div>
+            <span>Recianu Ciprian</span>
+        </a>
+
+        <a href="/user/logout">
+            <div class="logout">
+                <span><i class="fa fa-sign-out" aria-hidden="true">Logout</i></span>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+<div ui-view></div>

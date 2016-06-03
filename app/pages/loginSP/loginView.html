@@ -1,0 +1,23 @@
+<div class="inner-container">
+  <div class="box" >
+    <h1>Login</h1>
+      <form class="form" ng-submit="login()">
+
+        <div class="input">
+          <input  type="text" name="username" placeholder="User Name" ng-model="loginForm.userName">
+          <span ><i class="fa fa-sign-in"></i></span>
+        </div>
+
+        <div class="input">
+          <input  type="password" name="password" placeholder="Password" ng-model="loginForm.password">
+          <span ><i class="fa fa-key"></i></span>
+        </div>
+
+        <div class="check">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" ng-disabled="disabled">Login</button>
+   
+      </form>
+  </div>
+</div>

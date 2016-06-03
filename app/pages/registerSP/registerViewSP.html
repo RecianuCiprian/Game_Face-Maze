@@ -1,0 +1,33 @@
+<div class="inner-container">
+	<div class="box">
+		<h1>Register</h1>
+			<form class="form" name="form1" ng-submit="register()" novalidate>
+
+				<div class="input">
+					<input  type="email" ng-blur="visitedEmail = true" name="userEmail" placeholder="Email" ng-model="registerForm.email"  required>
+					<span><i class="fa fa-envelope-o"></i></span>
+					<div class="error-message"
+        				 ng-show="form1.userEmail.$invalid && visitedEmail && form1.userEmail.$dirty">
+        			Invalid email adress!
+        					
+   					</div>
+				</div>
+
+				<div class="input">
+					<input type="password" name="password" placeholder="Password" ng-model="registerForm.password" ng-model-option="{updateOn:'blur'}" required >
+					<span><i class="fa fa-key"></i></span>
+				</div>
+
+				<div class="input">
+					<input type="password" name="replayPassword" ng-model="replayPassword" placeholder="Replay Password" wj-validation-error="registerForm.password != replayPassword " ng-blur="visitedPassword = true" />
+					<span><i class="fa fa-key"></i></span>
+					<div class="error-message"
+        				 ng-show="form1.replayPassword.$invalid && visitedPassword">
+        					Sorry, the passwords don't match.
+   					</div>
+				</div>
+
+				<button type="submit" ng-disabled="form1.$invalid">Register</button>
+			</form>
+	</div>
+</div>

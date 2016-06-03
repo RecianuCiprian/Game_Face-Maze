@@ -1,0 +1,138 @@
+<div id="div2">
+
+	<div class="logo"><img class="logo-img" src="../../assets/img/pacman1.png"><!--logoul--></div>
+
+	<div id="nav_wrapper">
+
+		<ul>
+
+			<li><a href="#/user/game">Game</a> </li>
+			<li><a href="#/user/top">Top Scores</a> </li>
+			<li><a href="#/user/images">Images</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="profile">
+
+		<a href="#">
+			<div class="img-container">
+				<img src="../../assets/img/pacman1.png" >
+			</div>
+			<span>Recianu Ciprian</span>
+		</a>
+
+		<a href="/user/logout">
+			<div class="logout">
+				<span><i class="fa fa-sign-out" aria-hidden="true">Logout</i></span>
+			</div>
+		</a>
+
+	</div>
+</div>
+
+<div class="topcontainer">
+	
+	<div class="topbox">
+		
+		<div class="topmenu">
+		  	<ul>
+			    <li ng-class="{ active: isSet(1) }"><a href ng-click="setTab(1)">Easy mode</a></li>
+			    <li ng-class="{ active: isSet(2) }"><a href ng-click="setTab(2)">Normal mode</a></li>
+			    <li ng-class="{ active: isSet(3) }"><a href ng-click="setTab(3)">Hard mode</a></li>
+		    </ul>
+	  	</div>
+	  	<!-- to do place this in other template? -->
+
+		<div>
+
+		    <div ng-show="isSet(1)"> <!--infinite-scroll="setTab(1)">	-->
+
+		       <div class="toptablecontainer"> <!--to do my css container -->
+
+					<table class="toptable"> <!--to do my css table -->
+					<thead>
+						<tr>
+							<th class="toptable-column1-header"> Username </th>
+							<th class="toptable-column2-header"> Score </th>
+							<th class="toptable-column3-header"> Date </th>
+							<th class="toptable-column4-header"> Contact </th>
+						</tr> 
+					</thead>
+
+					<tbody>
+						
+						<tr ng-repeat="data in data.data.line">
+							<td class="toptable-column1-td"> {{data.userid}} : {{data.username}}</td>
+							<td class="toptable-column2-td"> {{data.easymode}} </td>
+							<td class="toptable-column3-td"> {{data.scoredate}} </td>
+							<td class="toptable-column4-td"> {{data.contact}}</td>
+						</tr>
+
+					</tbody>
+
+					</table>
+				</div>
+
+		    </div>
+
+			<div ng-show="isSet(2)">
+		       	<div class="toptablecontainer"> <!--to do my css container -->
+
+					<table class="toptable"> <!--to do my css table -->
+					<thead>
+						<tr>
+							<th class="toptable-column1-header"> Username </th>
+							<th class="toptable-column2-header"> Score </th>
+							<th class="toptable-column3-header"> Date </th>
+							<th class="toptable-column4-header"> Contact </th>
+						</tr> 
+					</thead>
+
+					<tbody>
+						
+						<tr ng-repeat="data in data.data.line">
+							<td class="toptable-column1-td"> {{data.userid}} : {{data.username}}</td>
+							<td class="toptable-column2-td"> {{data.easymode}} </td>
+							<td class="toptable-column3-td"> {{data.scoredate}} </td>
+							<td class="toptable-column4-td"> {{data.contact}} </td>
+						</tr>
+
+					</tbody>
+
+					</table>
+				</div>
+		    </div>
+
+		    <div ng-show="isSet(3)">
+		       	<div class="toptablecontainer"> <!--to do my css container -->
+
+					<table class="toptable"> <!--to do my css table -->
+					<thead>
+						<tr>
+							<th class="toptable-column1-header"> Username </th>
+							<th class="toptable-column2-header"> Score </th>
+							<th class="toptable-column3-header"> Date </th>
+							<th class="toptable-column4-header"> Contact </th>
+						</tr> 
+					</thead>
+
+					<tbody>
+						
+						<tr ng-repeat="data in data.data.line">
+							<td class="toptable-column1-td"> {{data.userid}} : {{data.username}} </td>
+							<td class="toptable-column2-td"> {{data.easymode}} </td>
+							<td class="toptable-column3-td"> {{data.scoredate}} </td>
+							<td class="toptable-column4-td"> {{data.contact}} </td>
+						</tr>
+
+					</tbody>
+
+					</table>
+				</div>
+		    </div>
+		    
+		</div>
+	</div>
+</div>
