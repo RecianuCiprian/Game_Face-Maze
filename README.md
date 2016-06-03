@@ -10,5 +10,6 @@ If the player has reached a ghost, then the application will automatically gener
 
 - Install all dependencies with **npm install**;
 - Install and run a MongoDB server;
+- Install Node for running the server;
 - Run **app.server.js** from the **mongo_server** folder to start the server;
 - In the browser, connect at [http://localhost:3000/]() .
