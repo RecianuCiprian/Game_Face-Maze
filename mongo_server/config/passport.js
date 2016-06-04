@@ -4,15 +4,14 @@ var localStrategy = require('passport-local').Strategy;
 var User = require('../models/user');
 
 module.exports=function(passport){
-    //console.log(passport);
+
 
     passport.serializeUser(function(user,done){
-        //console.log("userul serializat" + user._id);
+
         done(null,user.id);
     });
 
     passport.deserializeUser(function(id,done){
-        //console.log("userul dezerializat "+id);
         User.findById(id,function(err,user){
             done(err,user);
         })
@@ -23,7 +22,6 @@ module.exports=function(passport){
     passport.use('local-singup',new localStrategy({
         usernameField:'email',
         passwordField:'password'
-        //passReqToCallback:true
     },
         function(email,password,done){
 
@@ -81,7 +79,6 @@ module.exports=function(passport){
             profileFields: ['id', 'displayName', 'photos', 'email','friendlists']
         },
         function(accessToken, refreshToken, profile, done) {
-            //console.log(profile);
             process.nextTick(function(){
                 User.findOne({'facebook.id':profile.id},function(err,user){
                     if(err){
@@ -106,6 +103,5 @@ module.exports=function(passport){
 
         }
     ));
-    //console.log(passport);
 };
 

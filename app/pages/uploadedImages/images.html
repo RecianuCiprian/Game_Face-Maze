@@ -57,7 +57,7 @@
 		<!--<img id="img" src="" />-->
 s
 		<div class="cont-img-container">
-			<div ng-repeat="image in images"  class="cont-img-box">
+			<div ng-repeat="image in images track by $index"  class="cont-img-box">
 				<img  src='data:image/png;base64,{{image}}' />
 			</div>
 		</div>

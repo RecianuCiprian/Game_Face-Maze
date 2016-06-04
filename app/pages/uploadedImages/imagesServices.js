@@ -4,29 +4,7 @@ angular.module('myApp').service('imageService',
 
 		return({
 			imageProvider:imageProvider
-			//upload:upload
 		});
-
-		//function upload(file){
-        //
-		//	var deffered=$q.defer();
-		//	console.log(file);
-		//	$http.post('/user/upload/images',{file:file})
-		//		.success(function(data,status){
-        //
-		//			if(status === 200 && data){
-		//				deffered.resolve(data);
-		//			} else {
-		//				deffered.reject(data);
-		//			}
-		//		})
-		//		.error(function(data){
-		//			deffered.reject(data);
-		//		});
-        //
-		//	return deffered.promise;
-		//}
-
 
 		function imageProvider(){
 
@@ -34,9 +12,7 @@ angular.module('myApp').service('imageService',
 
 			$http.get('/user/images')
 				.success(function(data,status){
-					console.log(data);
-					console.log(status);
-
+					//console.log(data);
 					if(status === 200 && data){
 		  				deffered.resolve(data);
 		  			} else {

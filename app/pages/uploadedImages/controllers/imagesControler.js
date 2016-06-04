@@ -4,11 +4,9 @@ angular.module('myApp')
 
         imageService.imageProvider()
             .then(function(data){
-                //console.log(data);
-                //document.getElementById('img').setAttribute( 'src','data:image/png;base64,'+ data.ceva );
-                $scope.images=data.ceva;
-                //console.log(data[0].split('.').pop());
-                //console.log(data); test CLOB
+
+                $scope.images=data;
+
             },function() {
                 $location.path('/');
                 alert(data.status);
@@ -20,14 +18,12 @@ angular.module('myApp')
                     url: 'http://localhost:3000/user/upload/images', //webAPI exposed to upload the file
                     data: {file: $scope.file} //pass file as data, should be user ng-model
                 }).then(function(){
-                        console.log('ar trebui sa schimbe');
                         $window.location.reload();
-                        //$location.path('/user/images');
                     }, function(){
                         //$window.alert('An error occured');
                         console.log("error");
                     },function(evt){
-                        //console.log(evt);
+
                         var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
                         //console.log('progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
                         $scope.progress = 'progress: ' + progressPercentage + '% '; // capture upload progress
